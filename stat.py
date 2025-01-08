@@ -18,11 +18,12 @@ import warnings
 def get_hostname():
     return socket.gethostname().lower()
 
-# if hostname == "pi-zero-1":
-#     is_pi = True
-# else:
-#     is_pi = False
-is_pi = True
+hostname = get_hostname()
+
+if hostname == "pi-zero-1":
+    is_pi = True
+else:
+    is_pi = False
 
 pi_parent_dir = os.path.dirname(os.path.abspath(__file__))
 

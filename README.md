@@ -15,13 +15,21 @@ To use this program you will need a Raspberry Pi Zero W, with the Raspberry Pi O
 > git clone https://github.com/cjstoddard/epaper-status.git
 > 
 > cd epaper-status
->
+
+Edit stat.py and look for the line that reads;
+
+> if hostname == "pi-zero-1":
+
+Change pi-zero-1 to the host name of your device, then save and exit. Once that is done, you should be able to run the program with; 
+
 > python3 stat.py
+
+Notes:
+
+In the code there is a check for the hostname that is hard coded. The hard coded hostname must be changed in order for this program to work properly. This was done by the original author for testing purposes so he could run the program on his development machine before running it on his Raspberry Pi. I have chosen to keep the code in the program because it was actually kind of a clever way to handle it. If you want to shorten the program, removing the is_pi checks is a good way to do it.
 
 __________________________________
 To Do list:
-
-Code clean up, mainly to do with the hard coded hostname.
 
 Make this work with pip install, the libraries are available at;
 
