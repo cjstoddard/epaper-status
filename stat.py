@@ -15,12 +15,8 @@ import sys
 import time
 import warnings
 
-
 def get_hostname():
     return socket.gethostname().lower()
-
-
-hostname = get_hostname()
 
 # if hostname == "pi-zero-1":
 #     is_pi = True
@@ -36,7 +32,6 @@ if is_pi:
     with warnings.catch_warnings(action="ignore"):
         from waveshare_epd import epd2in13_V4
 
-
 # Set up fonts:
 if is_pi:
     picdir = os.path.join(pi_parent_dir, "pic")
@@ -45,7 +40,6 @@ if is_pi:
 else:
     font24 = ImageFont.truetype("Font.ttc", 24)
     font14 = ImageFont.truetype("Font.ttc", 14)
-
 
 def get_temp():
     # Prototype: get with /usr/bin/vcgencmd measure_temp
@@ -61,7 +55,6 @@ def get_temp():
         return number_val.group(1) + " C"
     return "NO TEMP"
 
-
 # This works on either platform:
 def get_ip_address():
     try:
@@ -72,7 +65,6 @@ def get_ip_address():
         return local_ip_address
     except Exception as e:
         return f"Error: {e}"
-
 
 def get_mem():
     if is_pi:
@@ -93,7 +85,6 @@ def get_mem():
     used_percent = int(used / total * 100)
     return f"{used_percent}%"
 
-
 def get_uptime():
     if is_pi:
         uptimestr = subprocess.check_output("cat /proc/uptime", shell=True).decode(
@@ -111,7 +102,6 @@ def get_uptime():
     up_days = float(total_seconds / 86400)
     active_percent = float((1 - idle_cores / (4 * total_seconds)) * 100)
     return f"{up_days:.2f}d, active {active_percent:.2f}%"
-
 
 def get_wifi_strength():
     if is_pi:
@@ -134,7 +124,6 @@ def get_wifi_strength():
         return "NO WIFI"
     return f"{match.group(1)}/{match.group(2)} {match.group(3)} dBm"
 
-
 def get_disk():
     if is_pi:
         diskstr = subprocess.check_output("df -k", shell=True).decode("utf-8")
@@ -156,10 +145,8 @@ tmpfs              43696       0     43696   0% /run/user/1000
     (dev, total, used, avail, percent, mount, *_) = line.split()
     return f"{int(used)//1000000}G/{int(total)//1000000}G {percent}"
 
-
 def get_datetime():
     return time.strftime("%Y-%m-%d %H:%M", time.localtime())
-
 
 fields = [
     [None, get_hostname(), font24, [0, 0]],
@@ -171,7 +158,6 @@ fields = [
     [None, get_temp(), font14, [120, 80]],
     ["Up", get_uptime(), font14, [0, 100]],
 ]
-
 
 def main():
     if is_pi:
@@ -202,7 +188,6 @@ def main():
             epd2in13_V4.epdconfig.module_exit()
         print()
         print("OK")
-
 
 if __name__ == "__main__":
     main()
