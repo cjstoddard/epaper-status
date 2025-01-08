@@ -36,9 +36,13 @@ https://pypi.org/project/waveshare-epaper/
 Not implemented yet!
 
 > git clone https://github.com/cjstoddard/epaper-status.git
+> 
 > cd epaper-status
+> 
 > python3 -m venv venv
+> 
 > source venv/bin/activate
+> 
 > pip install waveshare-epaper
 
 __________________________________
