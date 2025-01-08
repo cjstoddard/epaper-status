@@ -31,7 +31,7 @@ else:
 
 ## Pay Attention Here! ##
 ## Change this to approprient path for your system ##
-pi_parent_dir = "/home/chris/epaper-status"
+pi_parent_dir = os.path.dirname(os.path.abspath(__file__))
 
 if is_pi:
     sys.path.append(os.path.join(pi_parent_dir, "lib"))

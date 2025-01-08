@@ -20,11 +20,7 @@ Edit stat.py and look for the line;
 
 > if hostname == "pi-zero-1":
 
-and change the hostname to your own systems hostname. then look for the line;
-
-> pi_parent_dir = "/home/chris/epaper-status"
-
-and change the path appropriatly. 
+and change the hostname to your own systems hostname.
 
 Once that is done, you should be able to run the script with;
 
@@ -32,8 +28,6 @@ Once that is done, you should be able to run the script with;
 
 __________________________________
 To Do list:
-
-Fix the library parth so it is no longer hard coded.
 
 Fix the hostname so it is no longer hard coded.
 
