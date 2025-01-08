@@ -11,7 +11,9 @@ To use this program you will need a Raspberry Pi Zero W, with the Raspberry Pi O
 
 
 > sudo apt-get install wget git python3-pip python3-pil python3-numpy python3-spidev python3-pillow python3-setuptools python3-gpiozero
+> 
 > git clone https://github.com/cjstoddard/epaper-status.git
+> 
 > cd epaper-status
 
 Edit stat.py and look for the line;
