@@ -24,10 +24,12 @@ hostname = get_hostname()
 
 ## Pay Attention Here! ##
 ## Change this to hostname of your system ##
-if hostname == "pi-zero-1":
-    is_pi = True
-else:
-    is_pi = False
+# if hostname == "pi-zero-1":
+#     is_pi = True
+# else:
+#     is_pi = False
+is_pi = True
+
 
 ## Pay Attention Here! ##
 ## Change this to approprient path for your system ##
