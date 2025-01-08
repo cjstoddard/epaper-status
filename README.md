@@ -33,6 +33,10 @@ Once that is done, you should be able to run the script with;
 __________________________________
 To Do list:
 
+Fix the library parth so it is no longer hard coded.
+
+Fix the hostname so it is no longer hard coded.
+
 Make this work with pip install, the libraries are available at;
 
 https://pypi.org/project/waveshare-epaper/
