@@ -20,6 +20,8 @@ def get_hostname():
 
 hostname = get_hostname()
 
+## Please pay attention!
+## Change the hostname to your systems hostname.
 if hostname == "pi-zero-1":
   is_pi = True
 else:
