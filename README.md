@@ -22,7 +22,7 @@ Edit stat.py and look for the line that reads;
 
 Change pi-zero-1 to the host name of your device, then save and exit. Once that is done, you should be able to run the program with; 
 
-> python3 stat.py
+> python3 eink-stat.py
 
 Notes:
 
