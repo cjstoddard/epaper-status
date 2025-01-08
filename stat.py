@@ -21,9 +21,9 @@ def get_hostname():
 hostname = get_hostname()
 
 if hostname == "pi-zero-1":
-    is_pi = True
+  is_pi = True
 else:
-    is_pi = False
+  is_pi = False
 
 pi_parent_dir = os.path.dirname(os.path.abspath(__file__))
 
