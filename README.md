@@ -3,8 +3,9 @@ This is a fork of the work done by John Jacobsen at;
 
 https://github.com/eigenhombre/paperproto/tree/master?tab=MIT-1-ov-file
 
-This is a Python script to show system information for a Raspberry Pi Zero W on a Waveshare v4 e-ink Hat.
+This is a Python script to show system information for a Raspberry Pi Zero W on a Waveshare v4 e-ink Hat. This fork also contains the Waveshare edp python libraries from;
 
+https://github.com/waveshare/e-Paper.git
 
 sudo apt-get install wget git python3-pip python3-pil python3-numpy python3-spidev python3-pillow python3-setuptools python3-gpiozero
 
