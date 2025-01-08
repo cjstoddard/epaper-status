@@ -17,7 +17,9 @@ def get_hostname():
 
 hostname = get_hostname()
 
-if hostname == "pion":
+## Pay Attention Here! ##
+## Change this to hostname of your system ##
+if hostname == "pi-zero-1":
     is_pi = True
 else:
     is_pi = False
