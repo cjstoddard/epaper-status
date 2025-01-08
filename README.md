@@ -12,7 +12,19 @@ sudo apt-get install wget git python3-pip python3-pil python3-numpy python3-spid
 git clone https://github.com/cjstoddard/epaper-status.git
 cd epaper-status
 
-Edit stat.py, look for pi_parent_dir and change the patch appropriatly. 
+Edit stat.py and look for the line;
+
+ if hostname == "pi-zero-1":
+
+and change the hostname to your own systems hostname. then look for the line;
+
+  pi_parent_dir = "/home/chris/epaper-status"
+
+and change the path appropriatly. 
+
+Once that is done, you should be able to run the script with;
+
+python3 stat.py
 
 To Do list:
 Make this work with pip install, the libraries are available at;
