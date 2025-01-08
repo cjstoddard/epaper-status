@@ -27,15 +27,21 @@ Once that is done, you should be able to run the script with;
 python3 stat.py
 
 To Do list:
+
 Make this work with pip install, the libraries are available at;
 
 https://pypi.org/project/waveshare-epaper/
 
 Not implemented yet!
+
 git clone https://github.com/cjstoddard/epaper-status.git
+
 cd epaper-status
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install waveshare-epaper
 
 
