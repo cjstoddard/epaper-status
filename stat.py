@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+## Based on code written by John Jacobsen.
+## https://github.com/eigenhombre/paperproto
+## Libraries are provided by Waveshare
+## https://github.com/waveshareteam/e-Paper
+
 # Device-dependent imports:
 from PIL import Image, ImageDraw, ImageFont
 import os
