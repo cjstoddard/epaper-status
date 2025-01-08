@@ -28,9 +28,6 @@ hostname = get_hostname()
 #     is_pi = False
 is_pi = True
 
-
-## Pay Attention Here! ##
-## Change this to approprient path for your system ##
 pi_parent_dir = os.path.dirname(os.path.abspath(__file__))
 
 if is_pi:
