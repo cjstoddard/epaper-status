@@ -32,6 +32,7 @@ Once you are done testing it and making sure it works, edit the stat.sh file and
 
 and add this line to the file;
 
+> @reboot /home/chris/epaper-status/stat.sh >&1
 > */10 * * * * /home/chris/epaper-status/stat.sh >&1
 
 Be sure to alter the path appropriately, then save and exit the file.
