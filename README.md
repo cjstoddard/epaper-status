@@ -7,6 +7,8 @@ This is a Python script to show system information for a Raspberry Pi Zero W on 
 
 https://github.com/waveshare/e-Paper.git
 
+To use this program you will need a Raspberry Pi Zero W, and a properly installed Waveshare e-ink v4 Pi Hat.
+
 
 > sudo apt-get install wget git python3-pip python3-pil python3-numpy python3-spidev python3-pillow python3-setuptools python3-gpiozero
 > git clone https://github.com/cjstoddard/epaper-status.git
