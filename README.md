@@ -24,6 +24,17 @@ Change pi-zero-1 to the host name of your device, then save and exit. Once that 
 
 > python3 eink-stat.py
 
+Once you are done testing it and making sure it works, edit the stat.sh file and change the path of this program for your environment. the to run this program at startup and rerun the program periodically, type;
+
+> chmod +x stat.sh
+> 
+> sudo crontab -e
+
+and add this line to the file;
+
+> */10 * * * * /home/chris/epaper-status/stat.sh >&1
+
+Be sure to alter the path appropriately, then save and exit the file.
 Notes:
 
 In the code there is a check for the hostname that is hard coded. The hard coded hostname must be changed in order for this program to work properly. This was done by the original author for testing purposes so he could run the program on his development machine before running it on his Raspberry Pi. I have chosen to keep the code in the program because it was actually kind of a clever way to handle it. If you want to shorten the program, removing the is_pi checks is a good way to do it.
