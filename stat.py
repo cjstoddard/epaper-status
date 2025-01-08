@@ -22,7 +22,9 @@ if hostname == "pion":
 else:
     is_pi = False
 
-pi_parent_dir = "/home/rpi/e-Paper/RaspberryPi_JetsonNano/python"
+## Pay Attention Here! ##
+## Change this to approprient path for your system ##
+pi_parent_dir = "/home/chris/epaper-status"
 
 if is_pi:
     sys.path.append(os.path.join(pi_parent_dir, "lib"))
