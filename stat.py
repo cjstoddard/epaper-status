@@ -190,7 +190,7 @@ def main():
             time.sleep(0.5)
             print(subprocess.Popen("killall Preview", shell=True))
             time.sleep(0.5)
-            print(subprocess.Popen("open -g proto.png", shell=True))
+            print(subprocess.Popen("open proto.png", shell=True))
         if is_pi:
             epd.sleep()
     except KeyboardInterrupt:
