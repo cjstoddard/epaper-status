@@ -37,10 +37,6 @@ and add these lines to the file;
 > */10 * * * * /home/chris/epaper-status/stat.sh >&1
 
 Be sure to alter the path appropriately, then save and exit the file.
-Notes:
-
-In the code there is a check for the hostname that is hard coded. The hard coded hostname must be changed in order for this program to work properly. This was done by the original author for testing purposes so he could run the program on his development machine before running it on his Raspberry Pi. I have chosen to keep the code in the program because it was actually kind of a clever way to handle it. If you want to shorten the program, removing the is_pi checks is a good way to do it.
-
 __________________________________
 To Do list:
 

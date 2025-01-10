@@ -22,10 +22,12 @@ hostname = get_hostname()
 
 ## Please pay attention!
 ## Change the hostname to your systems hostname.
-if hostname == "pi-zero-1":
-  is_pi = True
-else:
-  is_pi = False
+#if hostname == "pi-zero-1":
+#  is_pi = True
+#else:
+#  is_pi = False
+
+is_pi = True
 
 pi_parent_dir = os.path.dirname(os.path.abspath(__file__))
 
