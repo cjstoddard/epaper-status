@@ -15,13 +15,7 @@ To use this program you will need a Raspberry Pi Zero W, with the Raspberry Pi O
 > git clone https://github.com/cjstoddard/epaper-status.git
 > 
 > cd epaper-status
-
-Edit stat.py and look for the line that reads;
-
-> if hostname == "pi-zero-1":
-
-Change pi-zero-1 to the host name of your device, then save and exit. Once that is done, you should be able to run the program with; 
-
+>
 > python3 eink-stat.py
 
 Once you are done testing it and making sure it works, edit the stat.sh file and change the path of this program for your environment. the to run this program at startup and rerun the program periodically, type;
