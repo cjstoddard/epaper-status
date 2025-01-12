@@ -37,6 +37,21 @@ and add these lines to the file;
 > */10 * * * * /home/chris/epaper-status/stat.sh >&1
 
 Be sure to alter the path appropriately, then save and exit the file.
+
+Notes:
+
+I have altered the lib files somewhat from the originals provided by Waveshare. One of the things I changed was the default orientation of the screen. My preference is to have the USB ports on the top, if you would like them on the bottom, do this;
+
+> nano lib/waveshare_epd/epd2in13_V4.py
+
+Look for this line;
+
+> img = img.rotate(270, expand=True).convert('1')
+
+and change it to this;
+
+> img = img.rotate(90, expand=True).convert('1')
+
 __________________________________
 To Do list:
 
