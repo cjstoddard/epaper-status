@@ -24,9 +24,7 @@ Once you are done testing it and making sure it works, edit the stat.sh file and
 > 
 > sudo crontab -e
 
-and add these lines to the file;
-
-> @reboot /home/chris/epaper-status/stat.sh >&1
+and add this line to the file;
 
 > */10 * * * * /home/chris/epaper-status/stat.sh >&1
 
