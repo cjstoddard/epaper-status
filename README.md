@@ -18,7 +18,7 @@ To use this program you will need a Raspberry Pi Zero W, with the Raspberry Pi O
 >
 > python3 eink-stat.py
 
-Once you are done testing it and making sure it works, edit the stat.sh file and change the path of this program for your environment. the to run this program at startup and rerun the program periodically, type;
+Once you are done testing it and making sure it works, edit the stat.sh file and change the path of this program for your environment. Then to run this program at startup and rerun the program periodically, type;
 
 > chmod +x stat.sh
 > 
