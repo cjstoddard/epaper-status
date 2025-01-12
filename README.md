@@ -20,15 +20,19 @@ To use this program you will need a Raspberry Pi Zero W, with the Raspberry Pi O
 
 Once you are done testing it and making sure it works, edit the stat.sh file and change the path of this program for your environment. Then to run this program at startup and rerun the program periodically, type;
 
-> chmod +x stat.sh
+> sudo cp stat.sh /usr/local/bin/
+>
+> sudo chown root:root /usr/local/bin/stat.sh
+>
+> sudo chmod +x /usr/local/bin/stat.sh
 > 
 > sudo crontab -e
 
 and add this line to the file;
 
-> */10 * * * * /home/chris/epaper-status/stat.sh >&1
+> */10 * * * * /usr/local/bin/stat.sh >&1
 
-Be sure to alter the path appropriately, then save and exit the file.
+Save and exit the file.
 
 Notes:
 
