@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/chris/epaper-status
+cd /home/<user name>/epaper-status
 python3 eink-stat.py
